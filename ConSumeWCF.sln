@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfDBService", "WcfDBService\WcfDBService.csproj", "{F932D9FB-D2D7-4826-A0FB-BCEC79E28DEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCApp", "MVCApp\MVCApp.csproj", "{5389EBD1-DE13-43EC-B61D-542B148CFBEE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F932D9FB-D2D7-4826-A0FB-BCEC79E28DEE} = {F932D9FB-D2D7-4826-A0FB-BCEC79E28DEE}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F932D9FB-D2D7-4826-A0FB-BCEC79E28DEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F932D9FB-D2D7-4826-A0FB-BCEC79E28DEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F932D9FB-D2D7-4826-A0FB-BCEC79E28DEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F932D9FB-D2D7-4826-A0FB-BCEC79E28DEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5389EBD1-DE13-43EC-B61D-542B148CFBEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5389EBD1-DE13-43EC-B61D-542B148CFBEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5389EBD1-DE13-43EC-B61D-542B148CFBEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5389EBD1-DE13-43EC-B61D-542B148CFBEE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4C48DD4D-898E-4FD9-8684-9F4811712C85}
+	EndGlobalSection
+EndGlobal

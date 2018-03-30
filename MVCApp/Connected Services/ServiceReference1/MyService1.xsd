@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WcfDBService.EF" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WcfDBService.EF" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfuserdetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="userdetail" nillable="true" type="tns:userdetail" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfuserdetail" nillable="true" type="tns:ArrayOfuserdetail" />
+  <xs:complexType name="userdetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserID" type="xs:int" />
+      <xs:element minOccurs="0" name="department" nillable="true" type="tns:department" />
+      <xs:element minOccurs="0" name="deptid" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="email" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="userdetail" nillable="true" type="tns:userdetail" />
+  <xs:complexType name="department">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="deptCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="deptName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="deptid" type="xs:int" />
+      <xs:element minOccurs="0" name="employee" nillable="true" type="tns:ArrayOfemployee" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="department" nillable="true" type="tns:department" />
+  <xs:complexType name="ArrayOfemployee">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="employee" nillable="true" type="tns:employee" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfemployee" nillable="true" type="tns:ArrayOfemployee" />
+  <xs:complexType name="employee">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="department" nillable="true" type="tns:department" />
+      <xs:element minOccurs="0" name="deptid" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="designation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="dob" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="employeeAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="employeeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="employeePh" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="employeeid" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="employee" nillable="true" type="tns:employee" />
+</xs:schema>
